@@ -23,3 +23,31 @@ function handleCellClick() {
   if (board[index] !== "" || !gameActive) {
     return;
   }
+
+board[index] = currentPlayer;
+  this.textContent = currentPlayer;
+
+checkWinner();
+
+if (gameActive) {
+  currentPlayer = currentPlayer === "X" ? "O" : "X";
+  statusText.textContent = Player ${currentPlayer}'s Turn';
+    }
+}
+
+function checkWinner() {
+  for (let combo of winningCombinations) {
+    consy [a, b, c] = combo;
+
+    if (
+        board[a] &&
+        board[a] === board[b] &&
+        board[a] === board[c]
+  ) {
+      statusText.textContent = 'Player ${currentPlayer} Wins!';
+      gameActive = false;
+      return;
+    }
+  }
+  if (!board.includes("")) {
+  
