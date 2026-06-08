@@ -14,3 +14,4 @@ Open the GitHub pages link or open index.html in a browser.
   ## Known Bugs
   - No computer opponent.
   - No score traking between games.
+  - Game outlines dont show up.
