@@ -15,3 +15,6 @@ Open the GitHub pages link or open index.html in a browser.
   - No computer opponent.
   - No score traking between games.
   - Game outlines dont show up.
+
+ ## Game Link
+ -https://christianolhasso30029-web.github.io/tic-tac-toe/
