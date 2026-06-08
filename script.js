@@ -49,5 +49,19 @@ function checkWinner() {
       return;
     }
   }
+  
   if (!board.includes("")) {
+    statusText.textContent = " It's a Draw!";
+    gameActive = false;
+  }
+}
+
+function restartGame() {
+  board = [ "", "" ,"" ,"" ,"" , "", "", "", ""];
+  currentPlayer = "X";
+  gameActive = true;
+
+  statusText.textContent = "Player X's Turn";
+  
+    
   
