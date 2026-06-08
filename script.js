@@ -63,5 +63,13 @@ function restartGame() {
 
   statusText.textContent = "Player X's Turn";
   
-    
+    cells.forEach(cell => {
+      cell.textContent = "";
+    });
+}
+
+cells.forEach(cell => {
+  cell.addEventListener("click", handleCellClick);
+});
+restartBtn.addEventListener("Click", restartGame);
   
