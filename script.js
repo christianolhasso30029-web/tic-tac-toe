@@ -31,20 +31,20 @@ checkWinner();
 
 if (gameActive) {
   currentPlayer = currentPlayer === "X" ? "O" : "X";
-  statusText.textContent = Player ${currentPlayer}'s Turn';
+  statusText.textContent = `Player ${currentPlayer}'s Turn`;
     }
 }
 
 function checkWinner() {
   for (let combo of winningCombinations) {
-    consy [a, b, c] = combo;
+    const [a, b, c] = combo;
 
     if (
         board[a] &&
         board[a] === board[b] &&
         board[a] === board[c]
   ) {
-      statusText.textContent = 'Player ${currentPlayer} Wins!';
+      statusText.textContent = `Player ${currentPlayer} Wins!`;
       gameActive = false;
       return;
     }
